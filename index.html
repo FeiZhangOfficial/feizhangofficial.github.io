@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-----header------->
+    <div id = "header">
+        <div id="container">
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Fei</span></h1>
+                <h2>I'm looking for <span> Winter 2024</span>  CO-OP</h2>
+                <h3>Brief summary of myself</h3>
+                <div class="summary">
+                    <p><span>Diligent</span> and <span>detail-oriented</span> professional with a fervent passion for leveraging data to optimize business outcomes and enhance customer experiences.</p>
+                    <p>Demonstrated expertise in <span>troubleshooting </span>and <span>problem-solving</span> drawn from diverse work experiences.</p>
+                    <p>Thrives in high-pressure environments, showcasing exceptional <span>time management</span> skills.</p>
+                    <p>Possesses strong technical acumen, proficient in multiple programming languages, and excels in data <span>analytics</span> and <span>visualization</span></p>
+                </div>
+            </div>
+
+        </div>  
+    </div>
+
+<!-----about------->
+
+<div id="about">
+    <div class="container">
+        <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <div class="tab-titles">
+                <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-content" id="Skills">
+                <ul>
+                    <li><span>Programing languages</span><br>C++ / Python / JavaScript / HTML / CSS </li>
+                    <li><span>Data Science</span><br>R / Python / SQL / VBA / PowerBI / Data Modeling</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experiences">
+                <ul>
+                    <li><span>University of Waterloo - Pension Assistant</span></li>
+                    <li>Streamlined monthly data processes, ensuring precise pension calculations, conducted routine audits on stored information, and safeguarded confidential documentation through systematic filing.</li>
+                    <li>Prepared pension payment directions and reconciled benefit payments to pension fund statements.</li>
+                    <li>Conceived define-benefit pension presentations and amassed evaluative feedback post-delivery.</li>
+                </ul>
+                
+                <ul>
+                    <li><span>Medline Canada - Operations Analyst</span></li>
+                    <li>Designed bespoke reports and data visualizations tailored to bolster strategic decision-making.</li>
+                    <li>Delved into trend analysis, forecasting operational demands, and formulating proactive action plans.</li>
+                    <li>Masterminded and continually refined tracking tools, leveraging Excel to enhance data management and reporting.</li>
+                </ul>
+                
+                <ul>
+                    <li><span>University of Waterloo - Course and Technical Support Assistant</span></li>
+                    <li>Collaborated with supervisors to escalate and address professors inquiries or technical issues.</li>
+                    <li>Created Mathematics assessments and applications algorithmically using Maplesoft and Mobius</li>
+                    <li>Completed all emergency tasks assigned by supervisors.</li>
+                    <li>Documented support interactions for future reference.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>University of Waterloo</span><span class="right-align">Expected in 12/2025</span></li>
+                    <p>Bachelor&apos;s Degree:&nbsp;</p>
+                    <p>Mathematical Optimization &amp; Computational Math</p>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work"><h3><a href="">My Personal Website </a> </h3>
+                <p>This is the current website. And I'm still improving it.</p>
+                
+                </div>
+                <div class="work"><h3><a href="https://github.com/FeiZhangOfficial/smallcovidproject">Analysis of Covid</a> </h3>
+                    <p>This is a small project that analysis a sample data of Covid19 using R</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</div>
+</body>
+</html>
