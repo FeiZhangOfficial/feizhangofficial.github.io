@@ -2,18 +2,39 @@
     margin: 0;
     padding:0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white; 
+ }
+
 body{
     background: black;
     color: white
 }
+#navbar{
+    width: 100%; /* takes only the required width */
+    position: fixed;
+    top: 0;
+    right: 0; /* positions the navbar to the right side of the viewport */
+    z-index: 1000; /* This ensures the navbar stays above other page elements */
+    padding: 10px;
+}
+
+#container{
+    padding: 10px 10px;
+}
+
 #header{
     width: 100%;
     height: 100vh;
 }
 
-.container{
-    padding: 10px 10%;
-}
+
 nav{
     margin-right:80px;
     display:flex;
@@ -75,6 +96,7 @@ nav li a:hover::after{
 }
 
 #about{
+    height: 100vh;
     padding: 80px 0;
     color:#ababab;
 }
@@ -83,6 +105,7 @@ nav li a:hover::after{
 }
 .right-align {
     float: right;
+    margin-right: 50px;
 }
 .subtitle{
     font-size: 60PX;
@@ -119,7 +142,7 @@ nav li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:blueviolet;
+    color:skyblue;
     font: 20px;
 }
 .tab-contents{
@@ -129,7 +152,10 @@ nav li a:hover::after{
     display: block;
 }
 
+
+/*-----portfolio----*/
 #portfolio{
+    height: 70vh;
     padding: 80px 0;
 }
 .work-list{
@@ -137,4 +163,72 @@ nav li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+}
+
+/*-----------contact--------*/
+#contact{
+    height: 80vh;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p{
+    margin-right:15px ;
+    font-size: 25px;
+}
+.btn{
+    display: inline-block;
+    margin: 50px 10px;
+    width:fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background:skyblue;
+    transition:background 0.5s;
+    text-decoration: none;
+}
+.btn:hover{
+    background:white;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    color: white;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 2-px;
+    cursor: pointer;
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+#msg{
+    color: white;
+    margin-top: 10px;
+    display: block;
 }
